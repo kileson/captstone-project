@@ -2,6 +2,9 @@
 
 # Black-Box Optimization (BBO) Capstone Project
 
+* [Data Set Datasheet](Datasheet.md) - Outlines the motivation, composition, collection process, and intended uses of the query history data.
+* [Optimizer Model Card](model_card.md) - Details the GP-UCB model architecture, intended use cases, performance metrics, and inherent mathematical limitations.
+
 ## Section 1: Project Overview
 **Goal:** The goal of this project is to optimize a series of eight unknown "black-box" functions where the internal mathematical structure (formula, gradients, or convexity) is hidden. The objective is to find the input coordinates that maximize the output of each function using a limited budget of queries.
 
