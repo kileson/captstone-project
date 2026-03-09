@@ -1,0 +1,16 @@
+# Datasheet: BBO Capstone Data Set
+
+## Motivation
+This data set was created to map, analyze, and optimize eight distinct black-box mathematical functions for the BBO Capstone Challenge. It supports the task of identifying global maximums under strict query budget constraints.
+
+## Composition
+The data set contains eight distinct subsets corresponding to Functions 1 through 8. Each subset includes input coordinates ranging from 2D to 8D, alongside their corresponding output scalar values. It comprises the initial provided data points plus ten sequentially generated queries per function. There are significant spatial gaps in the data due to heavy exploitation biases in later rounds.
+
+## Collection Process
+Queries were generated sequentially over ten weeks. The strategy utilized a Bayesian Optimization approach, specifically Gaussian Process Regression paired with an Upper Confidence Bound acquisition function. Coordinates were selected by mathematically balancing predicted peaks against landscape uncertainty.
+
+## Preprocessing and Uses
+The only internal transformation applied was normalizing the target variables during model fitting to ensure mathematical stability. This data is intended exclusively for analyzing the behavior of the specific BBO capstone functions. It is inappropriate to use this data set to benchmark generic optimization algorithms, as the heavy exploitation bias makes it unrepresentative of random or uniform sampling.
+
+## Distribution and Maintenance
+The data set is publicly available via this GitHub repository for academic review and peer feedback. It is maintained solely by the repository owner.
