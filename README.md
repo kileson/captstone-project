@@ -51,3 +51,7 @@ My core strategy relies on **Bayesian Optimization** using a **Gaussian Process 
     * **High Dimensions:** For 8D functions, I increased the number of random candidate samples (150k+) to ensure adequate coverage of the search space.
 
 This iterative approach ensures that resources are not wasted exploring regions we already know are poor, while preventing the model from getting stuck in local optima early in the process.
+
+## Section 4: Non-Technical Write-Up
+
+This project tackles black box optimization: finding the highest possible value of an invisible mathematical landscape using very few guesses. Think of it like a blindfolded hiker trying to find the tallest mountain peak by only feeling the slope of the ground under their feet. I used an AI technique called a Gaussian Process to build a probabilistic map of this hidden terrain. By mathematically balancing the urge to explore unknown areas against the need to drill down into known high peaks, the algorithm successfully pinpointed massive, record-breaking summits while saving significant computational time and resources.
